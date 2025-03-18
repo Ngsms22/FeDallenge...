@@ -1,0 +1,114 @@
+:root {
+    --background: #e9e1e1;
+    --primary:#041575;
+    --secondary:#21077c;
+    --hover:#3249cc;
+    --text:#333;
+    --light:#fff;
+    --footer-background:#041575;
+    --footer-text:#fff;
+
+    --transition:all 0.6s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+
+.navigation-bar {
+    height: 60px;
+    width: 90%;
+    background: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: center;
+    padding: 12px 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    
+}
+.navigation-bar .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    background: var(--light);
+
+}
+.end {
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    background: var(--light);
+    height: 100%;
+
+}
+.end .text{
+    background: var(--light);
+    cursor: pointer;
+}
+button {
+    background: var(--primary);
+    cursor: pointer;
+    border-radius: 5px;
+    height: 80%;
+    outline: none;
+    border: none;
+    width: 40%;
+    transition: var(--transition);
+
+}
+.navigation-bar .links a {
+    text-decoration: none;
+    color: var(--text);
+    background: var(--light);
+    transition: var(--transition);
+
+}
+.navigation-bar h3 {
+    background: var(--light);
+    color: #041575;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+.navigation-bar p {
+    opacity: 0;
+}
+button:hover{
+    background: var(--hover);
+}
+.navigation-bar .links a:hover {
+    text-decoration: underline;
+    color: var(--hover);
+}
+
+@media (max-width: 768px) {
+    .navigation-bar .links{
+        opacity: 0;
+    }
+    .end {
+        width: 40%;
+    }
+    .navigation-bar h3 {
+        width: 60%;
+    }
+    .navigation-bar p {
+        opacity: 1;
+    }
+}
+/* @media (max-width: 320px) {
+    .navigation-bar .links{
+        opacity: 0;
+    }
+    .end {
+        width: 40%;
+    }
+    .navigation-bar h3 {
+        width: 60%;
+    }
+} */
