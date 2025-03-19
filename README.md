@@ -111,7 +111,24 @@ seed-woc-market/
 - Icon styling and hover effects
 - Responsive design patterns
 
-### Day 3: Homepage
+### Day 3: About Page
+![image](https://github.com/user-attachments/assets/d6bfb343-938d-49cb-8023-8124554f854c)
+
+**Task:** Create an about page with company information
+
+**Requirements:**
+- Company history section
+- Team information
+- Mission and values
+- Responsive layout
+
+**Concepts to explore:**
+- Content layout for readability
+- Using CSS Grid and Flexbox together
+- Responsive typography
+- Image galleries
+
+### Day 4: Homepage
 
 **Task:** Build the main product display page
 
@@ -128,21 +145,7 @@ seed-woc-market/
 - Hover effects and transitions
 - Responsive grid using `minmax()` and `auto-fill`
 
-### Day 4: About Page
 
-**Task:** Create an about page with company information
-
-**Requirements:**
-- Company history section
-- Team information
-- Mission and values
-- Responsive layout
-
-**Concepts to explore:**
-- Content layout for readability
-- Using CSS Grid and Flexbox together
-- Responsive typography
-- Image galleries
 
 ### Day 5: Contact Page
 
