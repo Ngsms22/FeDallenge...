@@ -114,6 +114,15 @@ seed-woc-market/
 ### Day 3: About Page
 ![image](https://github.com/user-attachments/assets/d6bfb343-938d-49cb-8023-8124554f854c)
 
+### On Mobile
+
+![screencapture-127-0-0-1-5500-week-End-2-about-html-2025-03-19-00_07_08](https://github.com/user-attachments/assets/99cb440f-6569-4555-8d37-826f03d0b1a2)
+
+#### Right click and download this image to use: 
+
+![cover (2)](https://github.com/user-attachments/assets/60a73d33-a74a-41f4-89dc-f3e05e0fef76)
+
+
 **Task:** Create an about page with company information
 
 **Requirements:**
