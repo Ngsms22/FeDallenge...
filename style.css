@@ -19,6 +19,7 @@
 }
 
 .navigation-bar {
+    position: sticky;
     height: 60px;
     width: 90%;
     background: var(--light);
@@ -28,7 +29,7 @@
     justify-self: center;
     padding: 12px 24px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    /* position: fixed; */
+    top: 0;
     
 }
 .navigation-bar .links {
@@ -93,7 +94,7 @@ footer {
     /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
     width: 100%;*/
-    margin-top: 500px; 
+    /* margin-top: 500px; */
     margin-bottom: 0;
 
 }
@@ -228,6 +229,11 @@ footer .cpr {
     }
     .about-us {
         width: 100%;
+    }
+    footer section {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
     }
 }
 @media (max-width: 426px) {
