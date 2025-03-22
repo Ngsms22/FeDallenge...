@@ -1,108 +1,133 @@
-:root {
-    --background: #e9e1e1;
-    --primary:#041575;
-    --secondary:#21077c;
-    --hover:#3249cc;
-    --text:#333;
-    --light:#fff;
-    --footer-background:#041575;
-    --footer-text:#fff;
-
-    --transition:all 0.6s ease;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-
-.search-container {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    background: var(--light);
-    border-radius: 10px;
-    padding: 3px 20px;
-    margin-top: 20px;
-}
-.search-bar {
+.hero{
+    background-image: url("../DPZW0416.JPG");
+    height: 100vh;
     width: 100%;
-    padding: 12px 20px;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    outline: none;
-    background: var(--light);
-    color: #555;
-    transition:var(--transition);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-.search-icon {
-    font-size: 25px;
-    cursor: pointer;
-    background: var(--light);
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    /* position: relative; */
 }
-.products {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-    width: 80%;
-    justify-self: center;
-    margin-top: 25px;
-    margin-bottom: 40px;
-}
-.products .cart {
+.textcontainer{
+    font-family: sans-serif;
+    color: antiquewhite;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    background-color: var(--light);
-    padding: 12px;
-    transition: 0.4s all ease-in;
-    height: 100%;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-
+    gap: 12px;
+    align-items: center;
 }
-.products .cart:hover {
-    transform: translateY(-8px);
+.textcontainer h1{
+    text-align: center;
+    font-size: 52px;
 }
-.products .cart .picture {
-    width: 100%;
-    height: 200px;
+.textcontainer p {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
 }
-.picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.pname {
-    background: var(--light);
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 12px;
-    font-family: sans-serif;
-}
-.cart p {
-    font-family: sans-serif;
-    margin-bottom: 12px;
-}
-.cart span {
-    margin-bottom: 12px;
-}
-.desc {
-    font-family: sans-serif;
-    background: var(--light);
-}
-.cart span {
-    background: var(--light);
-}
-.btn {
-    background-color: #041575;
+button {
+    max-width: 300px;
+    width: 50%;
+    height: 40px;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: rgb(8, 21, 120);
+    color: aliceblue;
     border: none;
     outline: none;
-    margin-top: 4px;
-    color: white;
-    cursor: pointer;
-    padding: 12px 23px;
-    transition: 1s all ease-in;
+    font-size: 17px;
+    transition: all 0.5s ease;
 }
-.btn:hover{
-    background-color: skyblue;
+button:hover{
+    background-color: transparent;
+    border: 1px solid red;
+}
+.popup {
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    /* transition: all 0.5s ease; */
+}
+.popup-content {
+    background-color: azure;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0,12px,12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+}
+.popup-content .close-btn{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 30px;
+    height: 30px;
+    background-color: brown;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 6px;    
+}
+#get {
+    margin-top: 12px;
+}
+#get:hover{
+    color: black;
+}
+.popup-content .close-btn:hover{
+    background-color: transparent;
+    border: 1px solid red;
+    transition: all 0.2s ease;
+    color: black;
+}
+.popup-content .form-title {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-family: sans-serif;
+} 
+.form {
+    margin-bottom: 18px;
+}
+.form-group label{
+    display: block;
+}
+.form-group input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.form-group input:focus{
+    border: 1px solid #ddd;
 }
