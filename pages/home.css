@@ -5,7 +5,7 @@
 }
 
 .hero{
-    background-image: url("../DPZW0416.JPG");
+    background-image: url("../RTPO5797.JPG");
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -33,16 +33,19 @@
     flex-direction: column;
     gap: 12px;
     align-items: center;
+    width: 60%;
+    max-width: 600px;
 }
 .textcontainer h1{
     text-align: center;
-    font-size: 52px;
+    font-size: 45px;
 }
 .textcontainer p {
     display: flex;
     width: 50%;
     margin: 0 auto;
-    text-align: center;
+    justify-items: center;
+    /* text-align: center; */
 }
 button {
     max-width: 300px;
@@ -73,8 +76,20 @@ button:hover{
     left: 0;
     background-color: rgba(0,0,0,0.7);
     display: none;
-    /* transition: all 0.5s ease; */
+    animation: popup 0.3s ease-in-out;
 }
+/* create the animation */
+@keyframes popup {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .popup-content {
     background-color: azure;
     width: 90%;
@@ -99,7 +114,7 @@ button:hover{
     border-radius: 6px;    
 }
 #get {
-    margin-top: 12px;
+    margin-top: 20px;
 }
 #get:hover{
     color: black;
@@ -121,6 +136,9 @@ button:hover{
 }
 .form-group label{
     display: block;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
 }
 .form-group input {
     width: 100%;
@@ -130,4 +148,33 @@ button:hover{
 }
 .form-group input:focus{
     border: 1px solid #ddd;
+}
+.social-icons {
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+}
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background-color:rgb(50, 50, 136);
+    border-radius: 50%;
+    font-size: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.social-icon:hover {
+    background-color: aquamarine;
+    transform: translateY(-3px);
+}
+@media (max-width: 768px) {
+    .textcontainer h1 {
+        font-size: 30px;
+    }
+    .textcontainer p {
+        font-size: smaller;
+    }
 }
